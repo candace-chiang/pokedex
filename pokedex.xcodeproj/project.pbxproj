@@ -23,6 +23,7 @@
 		428AECD422166B5A00BD6A5E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428AECD322166B5A00BD6A5E /* ProfileViewController.swift */; };
 		428AECD622166B8100BD6A5E /* ProfileVC - UISetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428AECD522166B8100BD6A5E /* ProfileVC - UISetup.swift */; };
 		428AECD822169B0C00BD6A5E /* FavoritesVC - Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428AECD722169B0C00BD6A5E /* FavoritesVC - Table.swift */; };
+		428AECDA2216A0C000BD6A5E /* contains.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428AECD92216A0C000BD6A5E /* contains.swift */; };
 		4296C7A4221121CE00EE366D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4296C7A3221121CE00EE366D /* AppDelegate.swift */; };
 		4296C7A6221121CE00EE366D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4296C7A5221121CE00EE366D /* SearchViewController.swift */; };
 		4296C7A9221121CE00EE366D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4296C7A7221121CE00EE366D /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 		428AECD322166B5A00BD6A5E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		428AECD522166B8100BD6A5E /* ProfileVC - UISetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileVC - UISetup.swift"; sourceTree = "<group>"; };
 		428AECD722169B0C00BD6A5E /* FavoritesVC - Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoritesVC - Table.swift"; sourceTree = "<group>"; };
+		428AECD92216A0C000BD6A5E /* contains.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contains.swift; sourceTree = "<group>"; };
 		4296C7A0221121CE00EE366D /* pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4296C7A3221121CE00EE366D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4296C7A5221121CE00EE366D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				4296C7BE221147CD00EE366D /* pokeData.json */,
 				4296C7AA221121CE00EE366D /* Assets.xcassets */,
 				4296C7C3221238C400EE366D /* hexString.swift */,
+				428AECD92216A0C000BD6A5E /* contains.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				428AECD1221636E800BD6A5E /* CollectionViewCell.swift in Sources */,
 				4296C7A4221121CE00EE366D /* AppDelegate.swift in Sources */,
 				428AECBA2215505200BD6A5E /* FavoritesVC - UISetup.swift in Sources */,
+				428AECDA2216A0C000BD6A5E /* contains.swift in Sources */,
 				428AECC922159BE200BD6A5E /* Functions.swift in Sources */,
 				4296C7BB221147BB00EE366D /* Pokemon.swift in Sources */,
 				428AECC522159B5E00BD6A5E /* FilteredViewController.swift in Sources */,

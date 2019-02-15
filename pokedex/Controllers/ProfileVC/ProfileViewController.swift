@@ -28,6 +28,8 @@ class ProfileViewController: UIViewController {
     var speedLabel: UILabel!
     var totalLabel: UILabel!
     var typesLabel: UILabel!
+    
+    let defaults = UserDefaults.standard
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,5 +51,22 @@ class ProfileViewController: UIViewController {
             self.present(linkController, animated: true)
         }
     }
+    /*
+    @objc func unfavorite (_ button: UIButton) {
+        defaults.removeObject(forKey: pokemon.name!)
+        var favorites = UserDefaults.standard.value(forKey: "favorites") as? [String]
+        favorites!.remove(at: favorites!.index(of: pokemon.name!))
+        defaults.removeObject(forKey: "favorites")
+        UserDefaults.standard.set(favorites, forKey: "favorites")
+    }
+    
+    @objc func favorite (_ button: UIButton) {
+        let array = [pokemon.name!, String(pokemon.number!), pokemon.imageUrl!]
+        defaults.set(array, forKey: pokemon.name!)
+        var favorites = UserDefaults.standard.value(forKey: "favorites") as? [String]
+        favorites!.append(pokemon.name!)
+        defaults.removeObject(forKey: "favorites")
+        UserDefaults.standard.set(favorites, forKey: "favorites")
+    }*/
     
 }

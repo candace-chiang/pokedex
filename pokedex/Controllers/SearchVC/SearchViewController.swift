@@ -52,6 +52,10 @@ class SearchViewController: UIViewController, UITextFieldDelegate {
         setUpImages()
         setUpFields()
         setUpButtons()
+        /*
+        if UserDefaults.standard.object(forKey: "favorites") == nil {
+            UserDefaults.standard.set([], forKey: "favorites")
+        } */
         
     }
     

@@ -149,6 +149,18 @@ extension ProfileViewController {
         infoButton = UIButton(type: .infoLight)
         infoButton.addTarget(self, action: #selector(info), for: .touchUpInside)
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: infoButton)
+        
+        /*
+        favesButton = UIButton(frame: CGRect(x: 0, y: 0, width: view.frame.width/2, height: self.navigationController!.navigationBar.frame.height))
+        if defaults.contains(key: pokemon.name!) {
+            favesButton.setTitle("Unfavorite", for: .normal)
+            favesButton.addTarget(self, action: #selector(unfavorite), for: .touchUpInside)
+        } else {
+            favesButton.setTitle("Favorite", for: .normal)
+            favesButton.addTarget(self, action: #selector(favorite), for: .touchUpInside)
+        }
+        self.navigationItem.titleView = UIBarButtonItem(customView: favesButton)
+ */
     }
     
 }

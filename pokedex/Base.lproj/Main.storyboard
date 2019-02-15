@@ -91,6 +91,9 @@
                         <viewLayoutGuide key="safeArea" id="b9f-JD-8yy"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Favorites" image="faves" id="AHs-Wq-EBU"/>
+                    <connections>
+                        <segue destination="qbW-62-Pv5" kind="show" identifier="select" id="GUH-Xh-pHu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2JB-9h-dC6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -120,6 +123,6 @@
         <image name="search" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gy3-vj-LhR"/>
+        <segue reference="GUH-Xh-pHu"/>
     </inferredMetricsTieBreakers>
 </document>

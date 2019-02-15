@@ -9,10 +9,6 @@
 import UIKit
 
 extension FilteredViewController {
-    func setUpBackground() {
-        view.backgroundColor = UIColor(hexString: "#F8ECE0")
-    }
-    
     func setUpTable() {
         pokemonTable = UITableView(frame: view.frame)
         pokemonTable.register(TableViewCell.self, forCellReuseIdentifier: "tableCell")

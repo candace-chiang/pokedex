@@ -7,13 +7,16 @@
 //
 
 import UIKit
-
+/*
 extension FavoritesViewController {
-    func setUpBackground() {
-        view.backgroundColor = UIColor(hexString: "#F8ECE0")
+    func setUpTable() {
+        favesTable = UITableView(frame: view.frame)
+        favesTable.register(TableViewCell.self, forCellReuseIdentifier: "tableCell")
+        favesTable.delegate = self
+        favesTable.dataSource = self
+        favesTable.separatorStyle = UITableViewCellSeparatorStyle.none
+        favesTable.rowHeight = view.frame.height/13
+        favesTable.contentInset = UIEdgeInsetsMake(view.frame.height/30, 0, self.tabBarController!.tabBar.frame.height - view.frame.height/50, 0)
+        view.addSubview(favesTable)
     }
-    
-    func setUpLabels() {
-        
-    }
-}
+}*/
