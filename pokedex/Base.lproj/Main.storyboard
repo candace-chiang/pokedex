@@ -40,6 +40,7 @@
                     <navigationItem key="navigationItem" id="V4U-um-gvD"/>
                     <connections>
                         <segue destination="z1R-Ql-gJE" kind="show" identifier="search" id="sTP-oF-Hrs"/>
+                        <segue destination="qbW-62-Pv5" kind="show" identifier="single" id="gy3-vj-LhR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -118,4 +119,7 @@
         <image name="faves" width="24" height="24"/>
         <image name="search" width="24" height="24"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="gy3-vj-LhR"/>
+    </inferredMetricsTieBreakers>
 </document>

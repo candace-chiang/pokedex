@@ -121,7 +121,11 @@ class SearchViewController: UIViewController, UITextFieldDelegate {
     
     @objc func filter (_ sender: UIButton) {
         pokemonArray = Functions.search(name: name.trimmingCharacters(in: .whitespaces), number: number, type: type, attack: attack, defense: defense, health: health)
-        performSegue(withIdentifier: "search", sender: self)
+        if pokemonArray.count == 1 {
+            performSegue(withIdentifier: "single", sender: self)
+        } else {
+            performSegue(withIdentifier: "search", sender: self)
+        }
     }
     
     @objc func random (_ sender: UIButton) {
@@ -132,11 +136,15 @@ class SearchViewController: UIViewController, UITextFieldDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let identifier = segue.identifier {
             switch identifier {
-            case "search":
-                let filterVC = segue.destination as! FilteredViewController
-                filterVC.pokemonArray = pokemonArray
-                break
-            default: break
+                case "search":
+                    let filterVC = segue.destination as! FilteredViewController
+                    filterVC.pokemonArray = pokemonArray
+                    break
+                case "single":
+                    let profileVC = segue.destination as! ProfileViewController
+                    profileVC.pokemon = pokemonArray[0]
+                    break
+                default: break
             }
         }
     }

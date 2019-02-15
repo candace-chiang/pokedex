@@ -7,10 +7,14 @@
 //
 
 import UIKit
+import SafariServices
 
 class ProfileViewController: UIViewController {
     
     var pokemon: Pokemon!
+    
+    var infoButton: UIButton!
+    var favesButton: UIButton!
     
     var pokemonView: UIImageView!
     var nameLabel: UILabel!
@@ -27,9 +31,11 @@ class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController!.isNavigationBarHidden = false
 
         setUpImages()
         setUpLabels()
+        setUpButtons()
         // Do any additional setup after loading the view.
     }
     
@@ -37,5 +43,11 @@ class ProfileViewController: UIViewController {
         self.navigationController!.isNavigationBarHidden = false
     }
 
+    @objc func info(_ button: UIButton) {
+        if let url = URL(string: "https://google.com/search?q=" + pokemon.name){
+            let linkController = SFSafariViewController(url: url)
+            self.present(linkController, animated: true)
+        }
+    }
     
 }
